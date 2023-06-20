@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(4, 4, 4, 0.2);
+  margin-bottom: 20px;
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.item1 {order: 6;}
+.item2 {order: 2;}
+.item3 {order: 3;}
+.item4 {order: 4;}
+.item5 {order: 5;}
+.item6 {order: 1;}

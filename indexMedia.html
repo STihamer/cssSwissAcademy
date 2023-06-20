@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- This tag tells the browser to use the device width as the width of the viewport and to set the initial zoom level to 1.
+    The above meta code will allow you to see the style changes when you are in the inspect element tool -->
+    <title>Media Query Example</title>
+    <style>
+      /* Default styles for all devices */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;	
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+/* Styles for desktop devices */
+@media only screen and (min-width: 992px) {
+        body {
+          max-width: 960px;
+          margin: 0 auto;
+          background-color: lightblue;
+        }
+
+        h1 {
+          font-size: 48px;
+        }
+
+        p {
+          font-size: 20px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        img {
+          max-width: 600px;
+          margin-bottom: 40px;
+        }
+      }
+
+      /* Styles for tablet devices */
+      @media only screen and (min-width: 600px) and (max-width: 991px) {
+        body {
+          background-color: aqua;
+        }
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 18px;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+
+        img {
+          max-width: 500px;
+          margin-bottom: 30px;
+        }
+      }
+
+      /* Styles for mobile devices */
+      @media only screen and (max-width: 599px) {
+        body {
+          background-color: blue;
+          color: white;
+        }
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        img {
+          max-width: 300px;
+          margin-bottom: 20px;
+        }
+      }
+      @media print {
+        /* styles to apply when printing */
+        body {
+          font-size: 12pt;
+        }
+        .copyrighted-part {
+          display: none;
+        }
+      }
+      /* @media screen and (orientation: landscape) {
+   /*styles for portrait orientation }*/ /*
+  body {
+    background-color: lightpink;
+  }
+} */
+    </style>
+  </head>
+  <body>
+    <h1>Media Query Example</h1>
+    <p>
+        This is an example HTML page with different element types that is styled
+        using media queries for desktop, tablet, and mobile devices.
+      </p>
+      <img
+        src="https://via.placeholder.com/600x400.png?text=Desktop+Image"
+        alt="Desktop Image"
+      />
+      <div class="copyrighted-part">
+        <h1>
+          This section is not allowed to be printed because, this site has full
+          copyright on this content
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
+          risus et dolor tempor cursus. Donec id commodo velit. Nunc euismod purus
+          massa, sit amet efficitur neque ultrices vitae. Donec aliquet, mauris
+          nec ullamcorper rhoncus, nibh nibh vehicula felis, non suscipit mauris
+          elit sed elit. Aliquam ullamcorper tortor id lacus tincidunt, quis
+          tempor augue bibendum. Cras euismod lacus eu ligula cursus fringilla.
+          Nam vitae sapien sit amet eros faucibus sagittis. Sed pretium velit a
+          aliquam fermentum. Suspendisse eleifend rutrum ligula, a venenatis
+          lectus gravida quis.
+        </p>
+    </div>
+</body>
+</html>
+
